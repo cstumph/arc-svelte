@@ -1,7 +1,7 @@
 {
   "AWSTemplateFormatVersion": "2010-09-09",
   "Transform": "AWS::Serverless-2016-10-31",
-  "Description": "Exported by architect/package@7.1.0 on 2021-10-15T05:40:07.239Z",
+  "Description": "Exported by architect/package@7.1.0 on 2021-10-15T07:08:58.831Z",
   "Resources": {
     "Role": {
       "Type": "AWS::IAM::Role",
@@ -189,7 +189,7 @@
       "Type": "AWS::Serverless::Function",
       "Properties": {
         "Handler": "index.handler",
-        "CodeUri": "/Users/christopher/Repos/arc-test/src/http/get-index",
+        "CodeUri": "/Users/christopher/Repos/arc-svelte/src/http/get-index",
         "Runtime": "nodejs14.x",
         "Architectures": [
           "x86_64"
