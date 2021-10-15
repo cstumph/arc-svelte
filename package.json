@@ -3,7 +3,11 @@
   "version": "0.0.0",
   "description": "A fresh new Architect project!",
   "scripts": {
-    "start": "npx sandbox"
+    "start": "npx sandbox",
+    "move": "cp -r ./frontend/public ./",
+    "build": "cd ./frontend && npm run build; cd - && npm run move",
+    "dev": "npm run build && arc sandbox",
+    "stage": "npm run build && arc deploy"
   },
   "devDependencies": {
     "@architect/architect": "^9.1.0"
